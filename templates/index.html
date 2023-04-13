@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div style="text-align: center; font-size: 24px;">
+        <h1>Contact Client</h1>
+        <form method="POST" action="">
+            {% csrf_token %}
+            <input style="font-size: 24px; margin-bottom: 15px;" type="text" name="name" placeholder="Title of the email" required>
+            <br>
+            <input style="font-size: 24px; margin-bottom: 15px;"  type="text" name="email" placeholder="Your email" required>
+            <br>
+            <input style="font-size: 24px; margin-bottom: 15px;"  type="text" name="message" placeholder="Your wish" required>
+            <br>
+            <button style="font-size: 24px;"  type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
